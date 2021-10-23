@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,26 +19,56 @@
   </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <div class="white-part">
+    <div class="mobile-illustration-container">
+        <img  class="mobile-illustration" src="./images/illustration-woman-online-mobile.svg" alt="illustration 
+        woman standing in front of a large monitor" />
+      <!-- <img class="mobile-shadow" src="./images/bg-pattern-mobile.svg" />      -->
+    </div>
+    <div class="desktop-illustration-container">
+      <div class="respect-overflow">
+        <img src="./images/illustration-box-desktop.svg" alt="orange cube with an 
+        @ symbol on it's top side" />
+      </div>
+      <div class="no-overflow">
+        <img src="./images/illustration-woman-online-desktop.svg" alt="illustration 
+        woman standing in front of a large monitor" />
+      </div>
+    </div>
+    <div class="faq-container">
+      <h1>FAQ</h1>
+      <dl class="faqs">
+        <dt><span>How many team members can I invite?</span><button><img src="./images/icon-arrow-down.svg" alt="orange down arrow" /></button></dt>
+        <dd>You can invite up to 2 additional users on the Free plan. There is no 
+          limit on team members for the Premium plan.</dd>
+        <hr />
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+        <dt><span>What is the maximum file upload size?</span><button><img src="./images/icon-arrow-down.svg" alt="orange down arrow" /></button></dt>
+        <dd>No more than 2GB. All files in your account must fit your allotted 
+          storage space.</dd>
+        <hr />
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+        <dt><span>How do I reset my password?</span><button><img src="./images/icon-arrow-down.svg" alt="orange down arrow" /></button></dt>
+        <dd>Click “Forgot password” from the login page or “Change password” from 
+          your profile page. A reset link will be emailed to you.</dd>
+        <hr />
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <dt><span>Can I cancel my subscription?</span><button><img src="./images/icon-arrow-down.svg" alt="orange down arrow" /></button></dt>
+        <dd>Yes! Send us a message and we’ll process your request no questions 
+          asked.</dd>
+        <hr />
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
+        <dt><span>Do you provide additional support?</span><button><img src="./images/icon-arrow-down.svg" alt="orange down arrow" /></button></dt>
+        <dd>Chat and email support is available 24/7. Phone lines are open during 
+          normal business hours.</dd>
+        <hr />
+      </dl>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
 </body>
 </html>

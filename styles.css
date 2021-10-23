@@ -1,0 +1,123 @@
+/*- Mobile: 375px
+- Desktop: 1440px
+
+#### Text
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+
+#### Dividers
+
+- Light grayish blue: hsl(240, 5%, 91%)
+*/
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(359deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+dt {
+    color: hsl(237, 12%, 33%);
+    margin-bottom: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+dt > span:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.desktop-illustration-container {
+    display: none;
+}
+.white-part {
+    margin: 10rem 1.5rem 2rem;
+    background-color: white;
+    border-radius: 1.3rem;
+    max-width: 330px;
+}
+
+.mobile-illustration-container {
+    top: -117px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -91px;
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-position-y: bottom;
+    padding-bottom: 1.7rem;
+    background-position-x: center;
+    max-width: 362px;
+}
+
+.inner-container {
+    width: 76%;
+}
+
+.faqs {
+    margin: 2.5rem 1rem;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(240, 6%, 50%);
+}
+
+hr {
+    border-top: 1px solid hsl(240, 5%, 91%);;
+    margin: 1rem 0;
+    
+}
+
+dd {
+    display: none;
+}
+
+img.mobile-shadow {
+    position: absolute;
+    top: 118px;
+    left: 46px;
+}
+
+.mobile-illustration {
+    width: 76%;
+}
+
+@media only screen and (min-width: 412px) {
+
+}
+@media only screen and (min-width: 1024px) {
+    .mobile-illustration-container {
+        display: none;
+    }
+    .desktop-illustration-container {
+        display: initial;
+        position: absolute;
+        left: -82px;
+        overflow: hidden;
+    }
+    .white-part {
+        max-width: none;
+        display: flex;
+        padding: 4rem;
+        width: 66%;
+        position: relative;
+        justify-content: flex;
+    }
+    .respect-overflow {
+        position: relative;
+
+    }
+    
+}
