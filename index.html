@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./reset.css">
+  <!-- <link rel="stylesheet" href="./reset.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./tailwind.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,26 +18,24 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <div class="white-part">
-    <div class="mobile-illustration-container">
-        <img  class="mobile-illustration" src="./images/illustration-woman-online-mobile.svg" alt="illustration 
+<body class="font-Kumbh_Sans flex flex-col items-center h-screen bg-gradient-to-t from-blue-soft to-violet-soft">  
+  <div class="rounded mt-40 mb-8 mx-6 max-w-5xl bg-white ">
+    <div class="flex justify-center bg-pattern-mobile bg-no-repeat bg-bottom">
+      <!-- missing styles -->
+        <img  class="w-9/12" src="./images/illustration-woman-online-mobile.svg" alt="illustration 
         woman standing in front of a large monitor" />
       <!-- <img class="mobile-shadow" src="./images/bg-pattern-mobile.svg" />      -->
     </div>
-    <div class="desktop-illustration-container">
-      <div class="respect-overflow">
-        <img src="./images/illustration-box-desktop.svg" alt="orange cube with an 
+    <div>
+        <img class="hidden" src="./images/illustration-box-desktop.svg" alt="orange cube with an 
         @ symbol on it's top side" />
-      </div>
-      <div class="no-overflow">
-        <img src="./images/illustration-woman-online-desktop.svg" alt="illustration 
+        <img class="hidden" src="./images/illustration-woman-online-desktop.svg" alt="illustration 
         woman standing in front of a large monitor" />
-      </div>
     </div>
     <div class="faq-container">
-      <h1>FAQ</h1>
-      <dl class="faqs">
+      <h1 class="font-bold text-4xl text-center">FAQ</h1>
+      <dl class="my-10 mx-4 leading-normal text-xs font-normal">
+        <!-- have to do color for the above hl color: hsl(240, 6%, 50%); -->
         <dt><span>How many team members can I invite?</span><button><img src="./images/icon-arrow-down.svg" alt="orange down arrow" /></button></dt>
         <dd>You can invite up to 2 additional users on the Free plan. There is no 
           limit on team members for the Premium plan.</dd>
@@ -69,6 +67,5 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-
 </body>
 </html>

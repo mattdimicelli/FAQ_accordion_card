@@ -1,0 +1,21 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i my-custom-styles.css -o tailwind.css --watch",
+    "build": "npx tailwindcss -i my-custom-styles.css -o tailwind.css",
+    "production": "NODE_ENV=production npx tailwindcss -i my-custom-styles.css -o tailwind.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattdimicelli/FAQ_accordion_card.git"
+  },
+  "author": "Matt Di Micelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattdimicelli/FAQ_accordion_card/issues"
+  },
+  "homepage": "https://github.com/mattdimicelli/FAQ_accordion_card#readme"
+}
