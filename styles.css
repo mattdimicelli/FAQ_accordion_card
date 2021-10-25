@@ -104,8 +104,8 @@ img.mobile-shadow {
     .desktop-illustration-container {
         display: initial;
         position: absolute;
-        left: -82px;
-        overflow: hidden;
+        left: 0;
+        top: 0;
     }
     .white-part {
         max-width: none;
@@ -113,11 +113,47 @@ img.mobile-shadow {
         padding: 4rem;
         width: 66%;
         position: relative;
-        justify-content: flex;
+        height: 500px;
+        justify-content: flex-end;
     }
     .respect-overflow {
-        position: relative;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: 209px;
+        z-index: 1;
+        left: -51px;
+    }
 
+    .no-overflow {
+        overflow: hidden;
+        position: absolute;
+        width: 350px;
+        top: 100px;
+        height: 271px;
+    }
+
+    .illustration-desk-img {
+        position: absolute;
+        left: -58px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    .faqs {
+        margin: 2.5rem 0;
+    }
+
+    .space-occupier {
+        width: 300px;
+        height: 500px;
+    }
+
+    .faq-container {
+        flex: 1;
+        margin-right: 2.5rem;
     }
     
 }
