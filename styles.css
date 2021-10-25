@@ -106,7 +106,14 @@ img.mobile-shadow {
         position: absolute;
         left: 0;
         top: 0;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 271px;
+        background-position-x: right;
     }
+    
     .white-part {
         max-width: none;
         display: flex;
