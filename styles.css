@@ -29,6 +29,7 @@ dt {
 
 dt > span:hover {
     color: hsl(14, 88%, 65%);
+    cursor: pointer;
 }
 
 h1 {
