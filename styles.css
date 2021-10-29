@@ -1,16 +1,3 @@
-/*- Mobile: 375px
-- Desktop: 1440px
-
-#### Text
-- Very dark desaturated blue: hsl(238, 29%, 16%)
-- Very dark grayish blue: hsl(237, 12%, 33%)
-- Dark grayish blue: hsl(240, 6%, 50%)
-
-#### Dividers
-
-- Light grayish blue: hsl(240, 5%, 91%)
-*/
-
 body {
     font-family: 'Kumbh Sans', sans-serif;
     background-image: linear-gradient(359deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
@@ -78,6 +65,7 @@ h1 {
 hr {
     border-top: 1px solid hsl(240, 5%, 91%);;
     margin: 1rem 0;
+    color: hsl(240, 5%, 91%);
     
 }
 
