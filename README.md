@@ -38,7 +38,7 @@ Users should be able to:
 ### Built with
 
 - The New CSS Reset
-- Vanilla JS, CSS, and HTML
+- Vanilla JS, CSS, and HTML with Semantic HTML5 elements
 - Flexbox
 - Mobile-first workflow
 
